@@ -12,14 +12,6 @@ const kanit = Kanit({
 export const metadata: Metadata = {
   title: 'Yan Rooven Andrew | Développeur & Admin Réseau',
   description: 'Portfolio de Yan Rooven Andrew — Développeur Web & Mobile, Administrateur Réseau basé à Port-au-Prince, Haïti',
-  icons: {
-    icon: [
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-  },
 }
 
 export const viewport: Viewport = {
