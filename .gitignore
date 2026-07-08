@@ -1,0 +1,14 @@
+# 3d-portfolio
+
+.snowflake/
+.vercel/
+
+# Environment variables
+.env*.local
+
+# Common ignores
+node_modules
+.next/
+out/
+.DS_Store
+.vercel

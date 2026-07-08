@@ -1,0 +1,121 @@
+{
+  "hero": {
+    "headline": "Je suis Yan",
+    "tagline": "développeur web & mobile et administrateur réseau, basé à port-au-prince, haïti"
+  },
+  "about": {
+    "bio": "Développeur web & mobile et administrateur réseau basé à Port-au-Prince, Haïti. Je combine développement d'applications modernes et administration d'infrastructures réseau sécurisées. Avec 93+ projets sur GitHub et une formation Cisco & Microsoft, je recherche des opportunités internationales dès août 2026.",
+    "details": [
+      { "k": "Nationalité", "v": "Haïtienne" },
+      { "k": "Localisation", "v": "Port-au-Prince, HT" },
+      { "k": "Disponibilité", "v": "Août 2026" },
+      { "k": "Langues", "v": "FR · CR · EN" }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Frontend",
+      "description": "React, React Native et Flutter pour construire des interfaces web et mobiles modernes, réactives et soignées jusqu'au dernier détail."
+    },
+    {
+      "name": "Backend",
+      "description": "Laravel, Node.js et Express pour livrer des API REST robustes qui font tourner les applications côté serveur."
+    },
+    {
+      "name": "Bases de données",
+      "description": "MySQL, PostgreSQL, Firebase et MongoDB — modélisation et gestion des données adaptées à chaque projet."
+    },
+    {
+      "name": "Réseau & Sécurité",
+      "description": "Administration réseau Cisco & Microsoft, Active Directory, VPN et pare-feux — sécuriser les infrastructures qui font vivre les produits."
+    },
+    {
+      "name": "IA & Automatisation",
+      "description": "Agents IA, NLP et intégration LLM pour automatiser des tâches et enrichir les produits avec de l'intelligence."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Verinex Monitor",
+      "category": "Surveillance Réseau IA",
+      "description": "Plateforme IA de surveillance réseau temps réel — anomalies, prédiction de pannes, analyse de trafic.",
+      "tech": ["React", "Python", "AI", "SNMP"],
+      "liveUrl": "https://verinexmonitor.com",
+      "emoji": "🛡️",
+      "gradient": "linear-gradient(135deg,#0f172a,#06b6d4)"
+    },
+    {
+      "name": "Flowa",
+      "category": "Application Complète",
+      "description": "Application complète avec admin, utilisateur, web et chat intégrés — plateforme tout-en-un.",
+      "tech": ["React", "React Native", "Node.js", "Firebase"],
+      "liveUrl": "",
+      "emoji": "🌊",
+      "gradient": "linear-gradient(135deg,#00d4ff,#7b2ff7)"
+    },
+    {
+      "name": "KardPay",
+      "category": "Fintech",
+      "description": "Solution fintech de paiement — plateforme financière pour transactions digitales.",
+      "tech": ["Flutter", "Laravel", "MySQL"],
+      "liveUrl": "",
+      "emoji": "💳",
+      "gradient": "linear-gradient(135deg,#f7b731,#eb3b5a)"
+    },
+    {
+      "name": "MTED Promo",
+      "category": "Croissance Digitale",
+      "description": "Croissance digitale pour YouTube, TikTok, Instagram, Spotify — 5000+ clients satisfaits.",
+      "tech": ["React", "Node.js", "API", "Paiement"],
+      "liveUrl": "https://mtedpromo.com",
+      "emoji": "🚀",
+      "gradient": "linear-gradient(135deg,#ff6b6b,#ee5a24)"
+    },
+    {
+      "name": "My Deliveree",
+      "category": "Marketplace Livraison",
+      "description": "Marketplace de livraison multi-boutiques — stores, produits, commandes en ligne.",
+      "tech": ["React", "Node.js", "Marketplace"],
+      "liveUrl": "https://mydeliveree.com",
+      "emoji": "📦",
+      "gradient": "linear-gradient(135deg,#0fb9b1,#20bf6b)"
+    },
+    {
+      "name": "Vanessa AI",
+      "category": "Assistant IA",
+      "description": "Assistant multi-agent intelligent — systèmes autonomes et conversations contextuelles.",
+      "tech": ["Node.js", "Python", "NLP"],
+      "liveUrl": "",
+      "emoji": "🧠",
+      "gradient": "linear-gradient(135deg,#7b2ff7,#00d4ff)"
+    }
+  ],
+  "education": [
+    {
+      "date": "En cours",
+      "name": "CCNA en préparation",
+      "school": "Certification Cisco",
+      "description": "Préparation active à la certification CCNA — routing, switching, sécurité et automation réseau.",
+      "tags": ["Routing", "Switching", "Security", "Automation"]
+    },
+    {
+      "date": "2023 — Août 2026",
+      "name": "Diplôme en Administration Réseau",
+      "school": "Cisco & Microsoft",
+      "description": "Formation spécialisée en administration réseau, infrastructure Cisco et environnements Microsoft.",
+      "tags": ["Cisco", "Microsoft", "Windows Server"]
+    },
+    {
+      "date": "2023 — Août 2026",
+      "name": "Canado Technique",
+      "school": "Port-au-Prince, Haïti",
+      "description": "École secondaire technique — études académiques combinées aux compétences en informatique et réseaux.",
+      "tags": ["Informatique", "Réseaux", "Technique"]
+    }
+  ],
+  "contact": {
+    "email": "yanhaiti@outlook.fr",
+    "phone": "+509 38 43 9956",
+    "github": "https://github.com/yanhacking"
+  }
+}
