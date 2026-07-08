@@ -2,7 +2,6 @@
 const nextConfig = {
   output: 'export',
   devIndicators: false,
-  basePath: '/3d-portfolio',
   images: {
     unoptimized: true,
   },

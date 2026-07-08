@@ -36,7 +36,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     >
       <div className="w-full bg-[#0C0C0C] rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] p-4 sm:p-6 md:p-8 overflow-hidden">
         {/* Header */}
-        <div className="flex items-start justify-between gap-4 mb-4 sm:mb-6 md:mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-4 sm:mb-6 md:mb-8">
           <div className="flex-1">
             <p className="font-black text-[clamp(2rem,8vw,120px)] leading-none text-[#D7E2EA] mb-2">
               {project.number}

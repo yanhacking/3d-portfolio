@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import { FadeIn } from '@/components/FadeIn';
 import { ContactButton } from '@/components/Buttons';
 import { Magnet } from '@/components/Magnet';
@@ -14,27 +15,64 @@ const navItems = [
 ];
 
 export function HeroSection() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <section className="h-screen flex flex-col justify-between bg-[#0C0C0C] text-[#D7E2EA] overflow-x-clip relative">
       {/* Navbar */}
       <FadeIn delay={0} y={-20} className="w-full">
-        <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8">
+        <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8 relative z-30">
           <div className="text-sm md:text-lg lg:text-[1.4rem] font-medium uppercase tracking-wider">
             YRA
           </div>
-          <div className="flex gap-6 md:gap-10">
+
+          {/* Desktop nav */}
+          <div className="hidden md:flex gap-8 lg:gap-10">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="text-sm md:text-lg lg:text-[1.4rem] font-medium uppercase tracking-wider hover:opacity-70 transition-opacity duration-200"
+                className="text-lg lg:text-[1.4rem] font-medium uppercase tracking-wider hover:opacity-70 transition-opacity duration-200"
               >
                 {item.label}
               </a>
             ))}
           </div>
+
+          {/* Mobile menu toggle */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Menu"
+            aria-expanded={menuOpen}
+            className="md:hidden flex flex-col justify-center items-end gap-1.5 w-10 h-10 -mr-2"
+          >
+            <span
+              className={`block h-[1.5px] bg-[#D7E2EA] transition-all duration-200 ${menuOpen ? 'w-6 rotate-45 translate-y-[7px]' : 'w-6'}`}
+            />
+            <span className={`block h-[1.5px] bg-[#D7E2EA] transition-opacity duration-200 w-6 ${menuOpen ? 'opacity-0' : 'opacity-100'}`} />
+            <span
+              className={`block h-[1.5px] bg-[#D7E2EA] transition-all duration-200 ${menuOpen ? 'w-6 -rotate-45 -translate-y-[7px]' : 'w-4'}`}
+            />
+          </button>
         </nav>
       </FadeIn>
+
+      {/* Mobile menu overlay */}
+      {menuOpen && (
+        <div className="md:hidden fixed inset-0 z-20 bg-[#0C0C0C] flex flex-col items-center justify-center gap-8">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              onClick={() => setMenuOpen(false)}
+              className="text-2xl font-medium uppercase tracking-wider"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+      )}
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col items-center justify-center relative w-full">
@@ -44,7 +82,7 @@ export function HeroSection() {
             className="
               hero-heading
               font-black uppercase tracking-tight leading-none whitespace-nowrap
-              text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]
+              text-[12vw] sm:text-[14vw] md:text-[16vw] lg:text-[17.5vw]
               mt-6 sm:mt-4 md:-mt-5 px-4
             "
           >
